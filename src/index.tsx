@@ -1,11 +1,9 @@
-// src/index.tsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import theme from './styles/Theme';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import App from "./App";
+import theme from "./styles/Theme";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,5 +12,5 @@ ReactDOM.render(
       <App />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

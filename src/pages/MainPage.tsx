@@ -1,12 +1,23 @@
-// src/pages/MainPage.tsx
-import React from 'react';
+import React from "react";
+import { Box, Typography } from "@mui/material";
 
 const MainPage: React.FC = () => {
   return (
-    <div>
-      <h1>Добро пожаловать на платформу 5S!</h1>
-      <p>Главная страница с описанием платформы.</p>
-    </div>
+    <Box
+      sx={{
+        textAlign: "center",
+        marginTop: "50px",
+        padding: "20px",
+      }}
+    >
+      <Typography variant="h4" gutterBottom>
+        Добро пожаловать на Task Platform
+      </Typography>
+      <Typography variant="body1" sx={{ marginTop: "20px" }}>
+        Управляйте своими задачами и легко связывайтесь с нами. Это удобная платформа для
+        оптимизации вашего рабочего процесса.
+      </Typography>
+    </Box>
   );
 };
 
