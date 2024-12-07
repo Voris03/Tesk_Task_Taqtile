@@ -19,7 +19,7 @@ Task Platform — это веб-приложение для управления
 
 Склонируйте этот репозиторий на своё устройство:
 ```bash
-git clone <URL_репозитория>
+git clone git@github.com:Voris03/Tesk_Task_Taqtile.git
 ```
 
 ### 2. Перейдите в директорию проекта
