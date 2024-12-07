@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import styled from "styled-components";
 
-// Стили для футера
 const FooterWrapper = styled(Box)`
   background-color: #333;
   color: white;

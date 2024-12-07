@@ -7,8 +7,8 @@ const Header: React.FC = () => {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: "#4caf50", // Новый цвет фона
-        boxShadow: "none", // Убираем тень, чтобы фон выглядел чисто
+        backgroundColor: "#4caf50",
+        boxShadow: "none",
       }}
     >
       <Toolbar
@@ -23,9 +23,9 @@ const Header: React.FC = () => {
           variant="h6"
           sx={{
             flexGrow: 1,
-            color: "white", // Цвет текста остаётся белым
+            color: "white",
             "@media (max-width: 330px)": {
-              fontSize: "14px", // Уменьшаем размер текста на мобильных устройствах
+              fontSize: "14px",
             },
           }}
         >
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             display: "flex",
             gap: 2,
             "@media (max-width: 330px)": {
-              gap: 1, // Уменьшаем расстояние между ссылками
+              gap: 1,
             },
           }}
         >
@@ -46,9 +46,9 @@ const Header: React.FC = () => {
             <Typography
               variant="body1"
               sx={{
-                color: "white", // Цвет текста
+                color: "white",
                 "@media (max-width: 330px)": {
-                  fontSize: "12px", // Размер текста для ссылок
+                  fontSize: "12px",
                 },
               }}
             >
@@ -59,9 +59,9 @@ const Header: React.FC = () => {
             <Typography
               variant="body1"
               sx={{
-                color: "white", // Цвет текста
+                color: "white",
                 "@media (max-width: 330px)": {
-                  fontSize: "12px", // Размер текста для ссылок
+                  fontSize: "12px",
                 },
               }}
             >
@@ -72,9 +72,9 @@ const Header: React.FC = () => {
             <Typography
               variant="body1"
               sx={{
-                color: "white", // Цвет текста
+                color: "white",
                 "@media (max-width: 330px)": {
-                  fontSize: "12px", // Размер текста для ссылок
+                  fontSize: "12px",
                 },
               }}
             >

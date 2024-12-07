@@ -3,9 +3,9 @@ import { Button, Box, Typography } from "@mui/material";
 import CustomModal from "../../../components/CustomModal";
 
 interface DeleteConfirmationModalProps {
-  isOpen: boolean; // Управляет состоянием модального окна
-  onClose: () => void; // Функция закрытия модального окна
-  onConfirm: () => void; // Функция подтверждения удаления
+  isOpen: boolean;
+  onClose: () => void;
+  onConfirm: () => void; 
 }
 
 const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
@@ -23,7 +23,7 @@ const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
           borderRadius: 2,
           backgroundColor: "white",
           "@media (max-width: 330px)": {
-            padding: 2, // Уменьшаем отступы для мобильных экранов
+            padding: 2, 
           },
         }}
       >
@@ -33,7 +33,7 @@ const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
           sx={{
             textAlign: "center",
             "@media (max-width: 330px)": {
-              fontSize: "16px", // Уменьшаем размер шрифта для мобильных устройств
+              fontSize: "16px",
             },
           }}
         >
@@ -45,7 +45,7 @@ const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
             justifyContent: "space-between",
             marginTop: "20px",
             "@media (max-width: 330px)": {
-              flexDirection: "column", // Вертикальная ориентация кнопок
+              flexDirection: "column", 
               gap: 2,
             },
           }}
@@ -56,7 +56,7 @@ const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
             onClick={onConfirm}
             sx={{
               "@media (max-width: 330px)": {
-                width: "100%", // Растягиваем кнопку на всю ширину
+                width: "100%",
               },
             }}
           >
@@ -68,7 +68,7 @@ const DeleteConfirmationModal: React.FC<DeleteConfirmationModalProps> = ({
             onClick={onClose}
             sx={{
               "@media (max-width: 330px)": {
-                width: "100%", // Растягиваем кнопку на всю ширину
+                width: "100%",
               },
             }}
           >

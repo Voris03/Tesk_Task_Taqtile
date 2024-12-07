@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { validateContactForm } from "../utils/contactValidation";
-import { ContactFormValues } from "../types/contactForm.types"; // Импорт интерфейса
+import { ContactFormValues } from "../types/contactForm.types";
 
 export const useContactForm = () => {
   const [values, setValues] = useState<ContactFormValues>({

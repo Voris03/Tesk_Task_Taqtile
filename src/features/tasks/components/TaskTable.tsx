@@ -1,5 +1,3 @@
-// src/features/tasks/components/TaskTable.tsx
-
 import React from "react";
 import {
   Table,
@@ -29,7 +27,7 @@ const TaskTable: React.FC<TaskTableProps> = ({
       component={Paper}
       sx={{
         "@media (max-width: 330px)": {
-          overflowX: "auto", // Горизонтальный скролл
+          overflowX: "auto",
         },
       }}
     >

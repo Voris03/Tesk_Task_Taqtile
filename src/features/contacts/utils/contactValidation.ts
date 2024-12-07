@@ -1,4 +1,4 @@
-import { ContactFormValues } from "../types/contactForm.types"; // Импорт интерфейса
+import { ContactFormValues } from "../types/contactForm.types";
 
 export const validateContactForm = (values: ContactFormValues) => {
   const errors: Partial<ContactFormValues> = {};

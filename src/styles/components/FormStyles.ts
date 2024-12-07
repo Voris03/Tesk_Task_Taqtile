@@ -22,7 +22,8 @@ export const FormField = styled.div`
     color: #555;
   }
 
-  input, textarea {
+  input,
+  textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;

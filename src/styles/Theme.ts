@@ -3,18 +3,18 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#4CAF50", // Основной цвет
+      main: "#4CAF50",
     },
     secondary: {
-      main: "#FF5722", // Вторичный цвет
+      main: "#FF5722",
     },
     background: {
-      default: "#f5f5f5", // Цвет фона
-      paper: "#ffffff", // Цвет бумаги
+      default: "#f5f5f5",
+      paper: "#ffffff",
     },
     text: {
-      primary: "#333", // Основной цвет текста
-      secondary: "#555", // Второстепенный цвет текста
+      primary: "#333",
+      secondary: "#555",
     },
   },
   typography: {

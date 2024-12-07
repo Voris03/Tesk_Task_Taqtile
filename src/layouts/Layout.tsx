@@ -13,11 +13,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        minHeight: "100vh", // Минимальная высота экрана
+        minHeight: "100vh",
       }}
     >
       <Header />
-      <Box sx={{ flex: 1, padding: "20px" }}>{children}</Box> {/* Контент растягивается */}
+      <Box sx={{ flex: 1, padding: "20px" }}>{children}</Box>
       <Footer />
     </Box>
   );

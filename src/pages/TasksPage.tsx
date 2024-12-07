@@ -40,9 +40,9 @@ const TasksPage: React.FC = () => {
       </Typography>
       <TaskForm onAddTask={addTask} />
       <TaskTable
-        tasks={tasks} // Передаём список задач
-        onEditTask={handleEditTask} // Передаём обработчик редактирования
-        onDeleteTask={handleDeleteTask} // Передаём обработчик удаления
+        tasks={tasks}
+        onEditTask={handleEditTask}
+        onDeleteTask={handleDeleteTask}
       />
       {editingTask && (
         <TaskEditModal

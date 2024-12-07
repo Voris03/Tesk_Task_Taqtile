@@ -1,5 +1,3 @@
-// src/features/tasks/components/TaskForm.tsx
-
 import React, { useState } from "react";
 import {
   Box,
@@ -45,7 +43,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
         gap: 2,
         marginBottom: 3,
         "@media (max-width: 330px)": {
-          gap: 1, // Уменьшаем отступы между элементами
+          gap: 1,
         },
       }}
     >

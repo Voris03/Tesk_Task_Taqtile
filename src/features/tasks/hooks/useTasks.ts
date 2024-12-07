@@ -1,8 +1,9 @@
-// src/features/tasks/hooks/useTasks.ts
-
 import { useState, useEffect } from "react";
 import { Task } from "../types/task.types";
-import { loadFromLocalStorage, saveToLocalStorage } from "../../../utils/localStorage";
+import {
+  loadFromLocalStorage,
+  saveToLocalStorage,
+} from "../../../utils/localStorage";
 
 export const useTasks = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -18,7 +19,10 @@ export const useTasks = () => {
     saveToLocalStorage("tasks", tasks);
   }, [tasks]);
 
-  const addTask = (task: { name: string; status: "Новая" | "В работе" | "Завершена" }) => {
+  const addTask = (task: {
+    name: string;
+    status: "Новая" | "В работе" | "Завершена";
+  }) => {
     const newTask: Task = {
       id: tasks.length + 1,
       name: task.name,

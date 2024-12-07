@@ -1,13 +1,22 @@
 import React, { useState } from "react";
-import { Button, TextField, Box, Typography, Select, MenuItem, FormControl, InputLabel } from "@mui/material";
+import {
+  Button,
+  TextField,
+  Box,
+  Typography,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+} from "@mui/material";
 import CustomModal from "../../../components/CustomModal";
 import { Task } from "../types/task.types";
 
 interface TaskEditModalProps {
-  isOpen: boolean; // Управляет состоянием открытия модального окна
-  onClose: () => void; // Функция закрытия модального окна
-  task: Task; // Данные текущей задачи
-  onSave: (updatedTask: Task) => void; // Функция сохранения изменений
+  isOpen: boolean;
+  onClose: () => void;
+  task: Task;
+  onSave: (updatedTask: Task) => void;
 }
 
 const TaskEditModal: React.FC<TaskEditModalProps> = ({
@@ -16,8 +25,8 @@ const TaskEditModal: React.FC<TaskEditModalProps> = ({
   task,
   onSave,
 }) => {
-  const [name, setName] = useState(task.name); // Локальное состояние для названия задачи
-  const [status, setStatus] = useState<Task["status"]>(task.status); // Локальное состояние для статуса задачи
+  const [name, setName] = useState(task.name);
+  const [status, setStatus] = useState<Task["status"]>(task.status);
 
   // Обработчик сохранения изменений
   const handleSave = () => {
@@ -39,7 +48,7 @@ const TaskEditModal: React.FC<TaskEditModalProps> = ({
           borderRadius: 2,
           backgroundColor: "white",
           "@media (max-width: 330px)": {
-            padding: 2, // Уменьшаем отступы для мобильных устройств
+            padding: 2,
           },
         }}
       >
@@ -89,7 +98,7 @@ const TaskEditModal: React.FC<TaskEditModalProps> = ({
             onClick={handleSave}
             sx={{
               "@media (max-width: 330px)": {
-                width: "100%", // Кнопка занимает всю ширину
+                width: "100%",
               },
             }}
           >
@@ -101,7 +110,7 @@ const TaskEditModal: React.FC<TaskEditModalProps> = ({
             onClick={onClose}
             sx={{
               "@media (max-width: 330px)": {
-                width: "100%", // Кнопка занимает всю ширину
+                width: "100%",
               },
             }}
           >
